@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  background-color: #d4dcff;
+  font-family: 'open sans', sans-serif; }
+
+.c-main-grid-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 50%;
+  grid-gap: 2rem; }
+
+.c-main-grid-content-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem; }
+  .c-main-grid-content-card p {
+    text-align: left;
+    font-weight: 200;
+    word-spacing: 5px;
+    font-size: 1.1rem; }
+  .c-main-grid-content-card h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .c-main-grid-content-card a:link, .c-main-grid-content-card a:visited, .c-main-grid-content-card a:focus {
+    color: white;
+    background-color: #dd5555;
+    padding: 1rem 2rem;
+    border-radius: 200px;
+    text-decoration: none;
+    border: 1px solid transparent; }
+  .c-main-grid-content-card a:hover {
+    border: 1px solid #dd5555;
+    background-color: white;
+    color: #dd5555; }
+
+.tooltip {
+  position: relative;
+  color: #3B627E;
+  font-weight: bolder;
+  cursor: pointer; }
+  .tooltip:hover::before {
+    content: "";
+    border: solid transparent;
+    border-bottom-color: white;
+    color: black;
+    border-width: 10px;
+    position: absolute;
+    top: 20px; }
+  .tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    max-width: 158px;
+    bottom: 0;
+    right: -200px;
+    font-weight: 100;
+    line-height: 1.3em;
+    margin: 0;
+    background: #dd5555;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: .7em; }
+
+@media screen and (min-width: 768px) {
+  .c-main-grid-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 50%;
+    grid-gap: 2rem; } }
+
+@media screen and (min-width: 1040px) {
+  .c-main-grid-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-auto-rows: 50%;
+    grid-gap: 2rem; } }
