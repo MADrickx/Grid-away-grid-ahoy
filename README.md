@@ -2,7 +2,8 @@
 
 ## Made by : Audric Skivée (BeCode@hamiltons 5.32)
 
-New project this time, to learn more about Grid-layout, responsivity of it.
+New project this time, to learn more about Grid-layout and the responsivity of it.
+**everything is done with pure CSS, no js**
 
 ### what did I use ? 
 

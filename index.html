@@ -8,6 +8,50 @@
     <title>grid layout</title>
 </head>
 <body>
+    <aside class="l-aside">
+        <div class="l-aside-burger">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="#"><li>link#1</li></a>
+                    <a href="#"><li>link#2</li></a>
+                    <a href="#"><li>link#3</li></a>
+                    <a href="#"><li>link#4</li></a>
+                    <a href="#"><li>link#5</li></a>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+        <nav class="l-aside-nav">
+            <ul>
+                <li><a href="#">link#1</a></li>
+                <li><a href="#">link#2</a></li>
+                <li><a href="#">link#3</a></li>
+                <li><a href="#">link#4</a></li>
+                <li><a href="#">link#5</a></li>
+            </ul>
+        </nav>
+    </aside>
     <main class="l-main">
         <div class="c-main-grid">
             <div class="c-main-grid-content">
